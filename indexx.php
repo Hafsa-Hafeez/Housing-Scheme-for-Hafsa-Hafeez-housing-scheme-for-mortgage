@@ -9,43 +9,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
 </head>
-<body>
+<body style="margin:0; padding:0; background-image:url(https://www.homespakistan.com/blog/wp-content/uploads/2020/02/Purchasing.jpeg); background-repeat:no-repeat; background-size:cover; background-position:fixed;">
     
- <div class="container">
- <h1 class="mx-4">Pakistan Housing Scheme</h1> 
+ <div class="container mt-3" style="background-color:rgba(255,255,255,0.3);">
+ <h1 class="mx-4" style="color:green;">Pakistan Housing Scheme</h1> 
     
     <form method="post" action="">
-        <div class="form-group py-2 px-5">
-            <label for="name">Name:</label>
+        <div class="form-group py-1 px-5">
+            <label for="name"  style="">Name:</label>
             <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name">
          <!-- <p class="info" style="display:none"></p> -->
         </div>
-        <div class="form-group py-2 px-5">
+        <div class="form-group py-1 px-5">
             <label for="age">Age:</label>
             <input type="number" name="age" id="age" class="form-control" placeholder="Enter your age">
         </div>
-        <div class="form-group py-2 px-5">
+        <div class="form-group py-1 px-5">
             <label for="salary">Salary</label>
             <input type="number" name="salary" id="salary" class="form-control" placeholder="Enter your salary">
         </div>
 
-        <h1 class="mx-4">Enter Your Loan You Need</h1> 
+        <h1 class="mx-4"  style="color:green;">Enter Your mortgage You Need</h1> 
 
-        <div class="form-group py-2 px-5">
+        <div class="form-group py-1 px-5">
             <label for="loan">Loan:</label>
             <input type="number" name="loan" id="loan" class="form-control" placeholder="Enter your Loan">
         </div>
         
-        <div class="form-group py-2 px-5">
+        <div class="form-group py-1 px-5">
             <label for="advanced">Advanced payment:</label>
             <input type="number" name="advanced" id="advanced" class="form-control" placeholder="Enter your advanced you need">
         </div>
-        <div class="form-group py-2 px-5">
+        <div class="form-group py-1 px-5">
             <label for="year">Year:</label>
             <input type="number" name="year" id="year" class="form-control" placeholder="Enter year of returing Loan">
         </div>
-        <input type="submit" name="" id="submit" class="btn btn-info py-2 px-3 mx-5" value="Submit">
+        <input type="submit" name="" id="submit" class="btn btn-info py-1 px-3 mx-5 mb-2" value="Submit">
 
 </form>
 </div>
@@ -59,7 +60,7 @@
        $ins_year = $_POST['year']*12;
        $agee = $_POST['age'];
     $sal= $_POST['salary'];
-     if ($agee >= 30 && $sal >=30000) {
+     if ($agee >= 30) {
        
          $amount= ($current + $montly)/ $ins_year;
      
