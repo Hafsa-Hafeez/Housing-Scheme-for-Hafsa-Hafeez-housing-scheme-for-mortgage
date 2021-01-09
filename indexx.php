@@ -49,7 +49,7 @@
         <input type="submit" name="" id="submit" class="btn btn-info py-1 px-3 mx-5 mb-2" value="Submit">
 
 </form>
-</div>
+
   
 
 <?php
@@ -66,22 +66,22 @@
      
 
       if ($amount > ($_POST['salary'])) { ?>
-      <h1 class="text-center text-upprcase" style= "color:#2B7DE9"> hello.. ! <?php echo $_POST['name'] ?> </h1>
-      <h3  class="px-5 pt-5 text-center" style= "color:#2B7DE9">  your monthly payable amount <?php echo ceil($amount ) ?> rupees is more than  <?php  echo $_POST['salary'] ?> rupees </h3>
+      <h1 class="text-center text-upprcase" style= "color:black;"> hello.. ! <?php echo $_POST['name'] ?> </h1>
+      <h3  class="px-5 pt-5 text-center" style= "color:black;">  your monthly payable amount <?php echo ceil($amount ) ?> rupees is more than  <?php  echo $_POST['salary'] ?> rupees </h3>
    
    <?php 
    }
    else {
     ?>
-   <h1 class="text-center text-upprcase" style= "color:#2B7DE9"> Dear <?php  echo $_POST['name'] ?></h1>
-      <h3 class="px-5 text-center" style= "color:#2B7DE9">
+   <h1 class="text-center text-upprcase" style= "color:black;"> Dear <?php  echo $_POST['name'] ?></h1>
+      <h3 class="px-5 text-center" style= "color:black;">
           You will pay  <?php echo ceil($amount ) ?> Rupees everymonth for <?php  echo $_POST['year'] ?> years </h3>
  <?php 
    }
 }
 else{ ?>
 
-  <h1  class="text-center upprcase-text" style= "color:#2B7DE9" > dear  <?php echo $_POST['name'] ?>  <br> You are under age </h1>
+  <h1  class="text-center upprcase-text" style= "color:black;" > dear  <?php echo $_POST['name'] ?>  <br> You are under age </h1>
   <?php
 }
 
@@ -89,7 +89,7 @@ else{ ?>
 ?>
       
   
-
+      </div>
 
 
 
